@@ -1,0 +1,441 @@
+/* Font Madimi One */
+@import url('https://fonts.googleapis.com/css2?family=Madimi+One&display=swap');
+
+html {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+    box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+    background-image: url('../img/fondos/fondo1-byn.jpg');
+    background-size: cover;
+    background-position: center top;
+    background-attachment: fixed;
+    transition: background-image 1s;
+}
+
+body,
+html {
+    width: 100%;
+    height: 100%;
+}
+
+/* Botón "go-to-top" */
+.scroll-to-top {
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+    display: none;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    color: #fff;
+    background: rgba(52, 58, 64, 0.5);
+    line-height: 50px;
+}
+
+    .scroll-to-top:focus, .scroll-to-top:hover {
+        color: #fff;
+    }
+
+    .scroll-to-top:hover {
+        background: #343a40;
+    }
+
+    .scroll-to-top i {
+        font-weight: 800;
+    }
+
+/*************** Menú Navegación ***************/
+
+#sidebar-wrapper {
+    position: fixed;
+    z-index: 2;
+    right: 0;
+    width: 250px;
+    height: 100%;
+    transition: all 0.4s ease 0s;
+    transform: translateX(250px);
+    background: #1D809F;
+    border-left: 1px solid rgba(255, 0, 0, 0.1);
+}
+
+.sidebar-nav {
+    position: absolute;
+    top: 0;
+    width: 250px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+    .sidebar-nav li.sidebar-nav-item a {
+        display: block;
+        text-decoration: none;
+        color: #fff;
+        padding: 15px;
+    }
+
+    .sidebar-nav li a:hover {
+        text-decoration: none;
+        color: #fff;
+        background: rgba(255, 255, 255, 0.2);
+    }
+
+    .sidebar-nav li a:active,
+    .sidebar-nav li a:focus {
+        text-decoration: none;
+    }
+
+    .sidebar-nav > .sidebar-brand {
+        font-size: 1.2rem;
+        background: rgba(52, 58, 64, 0.1);
+        height: 80px;
+        line-height: 50px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-left: 15px;
+    }
+
+        .sidebar-nav > .sidebar-brand a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+            .sidebar-nav > .sidebar-brand a:hover {
+                color: #fff;
+                background: none;
+            }
+
+#sidebar-wrapper.active {
+    right: 250px;
+    width: 250px;
+    transition: all 0.4s ease 0s;
+}
+
+.menu-toggle {
+    position: fixed;
+    right: 15px;
+    top: 15px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    color: #fff;
+    background: rgba(52, 58, 64, 0.5);
+    line-height: 50px;
+    z-index: 999;
+}
+
+    .menu-toggle:focus, .menu-toggle:hover {
+        color: #fff;
+    }
+
+    .menu-toggle:hover {
+        background: #343a40;
+    }
+
+#btnMenuRegistro {
+    animation-name: animBtnMenuRegistro;
+    animation-duration: 5s;
+    animation-timing-function: ease;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: both;
+}
+
+@keyframes animBtnMenuRegistro {
+    0%, 50%, 100% {
+        opacity: 1;
+    }
+    25%, 75% {
+        opacity: 0;
+    }
+}
+
+/*************** Cabecera ***************/
+
+.masthead {
+    min-height: 30rem;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+    background-image: url('../img/fondos/fondoheader.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+    .masthead h1 {
+        font-family: "Madimi One", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 4rem;
+        background: linear-gradient(to right, #FF0000 20%, #FFF000 80%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        margin: 0;
+        padding: 0;
+    }
+
+    .masthead h3 {
+        color: burlywood;
+    }
+
+    .masthead h1, .masthead h3 {
+        animation-name: animTextoCabecera;
+        animation-duration: 1s;
+        animation-timing-function: linear;
+        animation-delay: 0s;
+        animation-iteration-count: 1;
+        animation-direction: normal;
+        animation-fill-mode: both;
+    }
+
+@keyframes animTextoCabecera {
+    from {
+        filter: blur(7px);
+        transform: scale(3, 3);
+    }
+
+    to {
+        filter: blur(0px);
+        transform: scale(1, 1);
+    }
+}
+
+.masthead .btn {
+    opacity: 0;
+    animation-name: animBtnSaberMas;
+    animation-duration: 3s;
+    animation-timing-function: ease;
+    animation-delay: 1.2s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+}
+
+@keyframes animBtnSaberMas {
+    0%, 50%, 100% {
+        opacity: 1;
+    }
+
+    25%, 75% {
+        opacity: 0;
+    }
+}
+
+@media (min-width: 992px) {
+    .masthead {
+        height: 100vh;
+    }
+
+        .masthead h1 {
+            font-size: 6rem;
+        }
+}
+/*************** Contenido de sección y cabecera de sección ***************/
+
+.content-section {
+    padding-top: 7.5rem;
+    padding-bottom: 7.5rem;
+}
+
+.content-section-heading h2, .content-section-heading .h2 {
+    font-family: "Madimi One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3rem;
+}
+
+.content-section-heading h3, .content-section-heading .h3 {
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+/*************** Sección Noticias ***************/
+
+#noticias img {
+    padding: 0.5rem;
+    transition: padding 0.3s linear, box-shadow 0.3s linear 0.15s;
+}
+
+    #noticias img:hover {
+        padding: 0;
+        box-shadow: -10px -10px 20px 0px rgba(0, 0, 0, 0.7);
+    }
+
+/*************** Sección Grupos musicales ***************/
+
+.gruposmusicales-item {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    max-width: 530px;
+    margin: auto auto 1rem;
+}
+
+    .gruposmusicales-item .caption {
+        display: flex;
+        height: 100%;
+        width: 100%;
+        background-color: rgba(33, 37, 41, 0.2);
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        z-index: 1;
+        clip-path: inset(0px);
+        transition: clip-path 0.25s ease-out, background-color 0.25s ease-out;
+    }
+
+        .gruposmusicales-item .caption .caption-content {
+            color: #fff;
+            margin: auto auto 2rem;
+            transition: padding 0.5s ease-out 0.2s;
+        }
+
+            .gruposmusicales-item .caption .caption-content h2, .gruposmusicales-item .caption .caption-content .h2 {
+                font-size: 3rem;
+                color: #f35151;
+                text-shadow: 3px 3px 3px white;
+                text-transform: uppercase;
+            }
+
+            .gruposmusicales-item .caption .caption-content p {
+                font-weight: 300;
+                font-size: 1.2rem;
+            }
+
+    .gruposmusicales-item img {
+        transition: clip-path 0.25s ease-out, padding 0.25s ease-out;
+        clip-path: inset(-1px);
+    }
+
+    .gruposmusicales-item:hover img {
+        clip-path: inset(2rem round 0.5rem);
+        padding: 2rem;
+    }
+
+    .gruposmusicales-item:hover .caption {
+        background-color: rgba(29, 128, 159, 0.5);
+        clip-path: inset(2rem round 0.5rem);
+    }
+
+        .gruposmusicales-item:hover .caption .caption-content {
+            padding-bottom: 5rem;
+        }
+
+@media (min-width: 992px) {
+    .gruposmusicales-item {
+        max-width: none;
+        margin: 0;
+    }
+}
+
+/*************** Sección Videos ***************/
+
+.carousel-caption, .carousel-indicators {
+    position: relative;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+/*************** Sección Discografías ***************/
+
+.nav-link {
+    margin-right: 2px;
+    color: white;
+    border: 1px solid white !important;
+    background-color: rgb(191,145,5,0.75);
+}
+
+    .nav-link:hover {
+        font-weight: bolder;
+        color: white;
+    }
+
+.ancho_col_datos {
+    width: 225px;
+}
+
+/***************** Ventana modal de registro ******************/
+
+#ventanaRegistro .modal-content {
+    border-radius: 0;
+    padding: 1rem;
+}
+
+#ventanaRegistro .modal-header {
+    border-bottom: none;
+    background-color: lightblue;
+}
+
+#ventanaRegistro h4 {
+    font-family: "Madimi One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3rem;
+    background: linear-gradient(to right, #FF0000, #FFA000 80%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 0 0 15px;
+    text-transform: capitalize;
+}
+
+#ventanaRegistro .modal-body p {
+    font-family: "Madimi One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2rem;
+    color: #a40000;
+}
+
+#ventanaRegistro .modal-body span, #ventanaRegistro .modal-body label {
+    font-family: "Madimi One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1rem;
+    color: rgba(0, 0, 0, 0.5);
+    background-color: lightblue;
+}
+
+/*************** Footer ***************/
+footer.footer {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+    footer.footer .social-link {
+        display: block;
+        text-decoration: none;
+        height: 4rem;
+        width: 4rem;
+        line-height: 4.3rem;
+        font-size: 1.5rem;
+        background-color: #1D809F;
+        transition: background-color 0.15s ease-in-out;
+        box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
+    }
+
+        footer.footer .social-link:hover {
+            background-color: #155d74;
+            text-decoration: none;
+        }

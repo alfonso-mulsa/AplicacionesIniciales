@@ -1,0 +1,56 @@
+/**************** N A V B A R ****************/
+
+.navbar-estilo {
+    background-color: #8fc6fa;
+}
+.navlink-estilo {
+    color: blue;
+}
+.dropdownmenu-estilo {
+    background-color: #d7ecff;
+}
+
+/**************** DESCRIPCION TAB ****************/
+.descripcion_tab {
+    transform: translate(0, -100%);
+    text-align: center;
+    /*left: 0%;
+    top: 0%;*/
+}
+.descripcion_tab h1 {
+	color: #fffb00;
+}
+.descripcion_tab p {
+	color: #fff;
+	font-size: 1.3rem;
+	line-height: 1.5;
+}
+
+/**************** PARRAFOS ****************/
+
+.texto-columnas {
+    column-count: 3;
+    column-gap: 20px;
+    column-rule: 4px dotted gray;
+}
+
+.texto-columnas p::first-letter {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.texto-columnas p {
+    padding-top: 20px;
+}
+
+/**************** F O O T E R ****************/
+.page-footer {
+    background-color: #222;
+    color: #ccc;
+    padding-top: 10px;
+}
+.footer-copyright {
+    color: #666;
+    padding-top: 0;
+    padding-bottom: 10px;
+}

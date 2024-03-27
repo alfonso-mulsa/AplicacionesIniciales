@@ -1,0 +1,672 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mi Web de música</title>
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    <!-- Simple line icons-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css" rel="stylesheet" />
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="css/site.css" rel="stylesheet" />
+</head>
+<body id="page-top">
+
+    <!-- Menú Navegación -->
+    <a class="menu-toggle rounded" href="#"><i class="fas fa-bars"></i></a>
+    <nav id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+            <li class="sidebar-brand">
+                <a href="#noLink">Menú</a>
+            </li>
+            <li class="sidebar-nav-item"><a href="#page-top">Inicio</a></li>
+            <li class="sidebar-nav-item"><a href="#noticias">Noticias</a></li>
+            <li class="sidebar-nav-item"><a href="#gruposmusicales">Grupos musicales</a></li>
+            <li class="sidebar-nav-item"><a href="#videos">Videos</a></li>
+            <li class="sidebar-nav-item"><a href="#discografias">Discografías</a></li>
+            <li class="sidebar-nav-item" id="btnMenuRegistro" data-bs-toggle="modal" data-bs-target="#ventanaRegistro"><a href="#noLink">¡Regístrate!</a></li>
+        </ul>
+    </nav>
+
+    <!-- Botón <go-to-top> -->
+    <a class="scroll-to-top rounded" href="#page-top"><i class="fas fa-angle-up"></i></a>
+
+    <!-- Cabecera -->
+    <header class="masthead d-flex align-items-end">
+        <div class="container px-4 px-lg-5 text-center">
+            <h1 class="mb-1">Mi Web de música</h1>
+            <h3 class="mb-5"><em>Conciertos, información y noticias sobre música</em></h3>
+            <a class="btn btn-warning btn-xl" href="#noticias">Saber más</a>
+        </div>
+    </header>
+
+    <!-- Sección Noticias -->
+    <section class="content-section py-4" id="noticias">
+        <div class="container px-5">
+            <div class="content-section-heading text-center text-center">
+                <h2 class="text-danger shadow-lg bg-white bg-opacity-75 py-2 mb-4 rounded-pill">Noticias</h2>
+            </div>
+            <div class="row mx-1 gx-5 align-items-stretch bg-white bg-opacity-75 rounded-3 shadow-lg mb-3">
+                <div class="col-lg-4 order-lg-2">
+                    <div class="p-3">
+                        <a href="#"><img class="img-fluid rounded-circle" src="./img/noticias/residente-2024.jpg" alt="Imagen de Residente" /></a>
+                    </div>
+                </div>
+                <div class="col-lg-8 order-lg-1">
+                    <div class="p-5">
+                        <h2 class="display-7"><strong><em>Residente</em></strong> anuncia que pasará por Madrid y Barcelona con su gira mundial en 2024</h2>
+                        <p class="fw-bolder">
+                            <strong>Residente</strong> está de vuelta y ha confirmado hoy mismo que en 2024 se embarcará en una gira mundial, <strong><em>Las Letras Ya No Importan</em></strong>, con la que
+                            visitará varios países entre los meses de septiembre y diciembre. Entre los países afortunados está <strong>España</strong>, de hecho el cantante puertorriqueño iniciará
+                            <strong>el tour en Barcelona el 14 de septiembre</strong> y pasará por <strong>Madrid</strong> al día siguiente, el <strong>día 15</strong>.
+                        </p>
+                        <p class="text-center small">Publicado por <cite>Wake And Listen</cite> | <time datetime="2024-03-13">Mar 13, 2024</time> | Conciertos, Noticias</p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="row mx-1 gx-5 align-items-stretch bg-white bg-opacity-75 rounded-3 shadow-lg">
+                <div class="col-lg-4">
+                    <div class="p-3">
+                        <a href="#"><img class="img-fluid rounded-circle" src="./img/noticias/lydia-martin.jpg" alt="Imagen de Residente" /></a>
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="p-5">
+                        <h2 class="display-7"><strong><em>«La Noria»</em></strong> de Lydia Martín: Desde las alturas hasta las profundidades</h2>
+                        <p class="fw-bolder">
+                            ¿Has subido alguna vez en una noria? ¿miedo a las alturas? ¿te mareas? ¿luces girando en el vacío ferial de la noche? Te entiendo. Pero,
+                            tranquilo, con el último lanzamiento de <strong>Lydia Martín, La Noria</strong>, irás de viaje introspectivo a través de las complejidades del alma
+                            humana sin necesidad de pagar un boleto para el London Eye de turno.
+                        </p>
+                        <p class="text-center small">Publicado por <cite>Wake And Listen</cite> | <time datetime="2024-03-10">Mar 10, 2024</time> | Discos, Noticias</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Grupos musicales -->
+    <section class="content-section py-4" id="gruposmusicales">
+        <div class="container px-4 px-lg-5">
+            <div class="content-section-heading text-center">
+                <h2 class="text-body shadow-lg bg-info bg-opacity-75 py-2 mb-4 rounded-pill">Grupos musicales</h2>
+            </div>
+            <div class="row g-lg-4 g-md-2 g-sm-1">
+                <div class="col-lg-6">
+                    <a class="gruposmusicales-item" href="#!">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <div class="h2">Queen</div>
+                            </div>
+                        </div>
+                        <img class="img-fluid rounded-3" src="./img/gruposmusicales/queen.jpg" alt="Imagen de Queen" />
+                    </a>
+                </div>
+                <div class="col-lg-6">
+                    <a class="gruposmusicales-item" href="#!">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <div class="h2">U2</div>
+                            </div>
+                        </div>
+                        <img class="img-fluid rounded-3" src="./img/gruposmusicales/U2.jpg" alt="Imagen de U2" />
+                    </a>
+                </div>
+                <div class="col-lg-6">
+                    <a class="gruposmusicales-item" href="#!">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <div class="h2">Oasis</div>
+                            </div>
+                        </div>
+                        <img class="img-fluid rounded-3" src="./img/gruposmusicales/oasis.jpg" alt="Imagen de Oasis" />
+                    </a>
+                </div>
+                <div class="col-lg-6">
+                    <a class="gruposmusicales-item" href="#!">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <div class="h2">Nirvana</div>
+                            </div>
+                        </div>
+                        <img class="img-fluid rounded-3" src="./img/gruposmusicales/nirvana.jpg" alt="Imagen de Nirvana" />
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Videos -->
+    <section class="content-section pt-4 pb-0" id="videos">
+        <div class="container px-4 px-lg-5">
+            <div class="content-section-heading text-center">
+                <h2 class="text-light shadow-lg bg-success bg-opacity-75 py-2 mb-4 rounded-pill">Videos de conciertos</h2>
+            </div>
+        </div>
+        <div id="carouselVideos" class="carousel slide carousel-fade">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselVideos" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselVideos" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselVideos" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="container col-8">
+                        <div class="row justify-content-center">
+                            <video controls="controls" muted poster="./video/u2-poster.jpg">
+                                <source src="video/u2.mp4" type="video/mp4" />
+                            </video>
+                            <!--<iframe class="d-block" width="1236" height="550" src="https://www.youtube.com/embed/776yP6B2lH0" referrerpolicy="no-referrer-when-downgrade" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>-->
+                        </div>
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>U2 UV @ The Sphere (FULL CONCERT 4K)</h5>
+                            <p>Las Vegas <time datetime="2023-10-07">(Oct 7, 2023)</time></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="container col-8">
+                        <div class="row justify-content-center">
+                            <video controls="controls" muted poster="./video/queen-poster.jpg">
+                                <source src="video/queen.mp4" type="video/mp4" />
+                            </video>
+                            <!--<iframe class="d-block" width="1238" height="550" src="https://www.youtube.com/embed/gMLjkQn-NwY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>-->
+                        </div>
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Queen - Live Aid 1985 Full Concert</h5>
+                            <p>Wembley Stadium-London <time datetime="1985-07-13">(Jul 13, 1985)</time></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="container col-8">
+                        <div class="row justify-content-center">
+                            <video controls="controls" muted poster="./video/nirvana-poster.jpg">
+                                <source src="video/nirvana.mp4" type="video/mp4" />
+                            </video>
+                            <!--<iframe class="d-block" width="1236" height="550" src="https://www.youtube.com/embed/6_w-tEIXA1Q" title="Nirvana - Live in Amsterdam 1991 Bluray 1080p" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>-->
+                        </div>
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Nirvana - Live in Amsterdam</h5>
+                            <p>Amsterdam <time datetime="1991-11-25">(Nov 25, 1991)</time></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselVideos" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselVideos" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+
+    <!-- Sección Discografías -->
+    <section class="content-section py-4" id="discografias">
+        <div class="container px-4 px-lg-5">
+            <div class="content-section-heading text-center">
+                <h2 class="text-black-50 shadow-lg bg-warning bg-opacity-75 py-2 mb-4 rounded-pill">Discografías</h2>
+            </div>
+            <!-- Menú Discografías -->
+            <nav>
+                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                    <button class="nav-link active" id="nav-queen-tab" data-bs-toggle="tab" data-bs-target="#nav-queen" type="button" role="tab" aria-controls="nav-queen" aria-selected="true">Queen</button>
+                    <button class="nav-link" id="nav-u2-tab" data-bs-toggle="tab" data-bs-target="#nav-u2" type="button" role="tab" aria-controls="nav-u2" aria-selected="false">U2</button>
+                    <button class="nav-link" id="nav-oasis-tab" data-bs-toggle="tab" data-bs-target="#nav-oasis" type="button" role="tab" aria-controls="nav-oasis" aria-selected="false">Oasis</button>
+                    <button class="nav-link" id="nav-nirvana-tab" data-bs-toggle="tab" data-bs-target="#nav-nirvana" type="button" role="tab" aria-controls="nav-nirvana" aria-selected="false">Nirvana</button>
+                </div>
+            </nav>
+            <div class="tab-content" id="nav-tabContent">
+                <!-- Discografía de Queen -->
+                <div class="tab-pane fade show active" id="nav-queen" role="tabpanel" aria-labelledby="nav-queen-tab" tabindex="0">
+                    <div class="flex-fill border border-1 border-white p-3 bg-warning bg-opacity-25 table-responsive" style="height: 600px; overflow: auto">
+                        <table class="table table-light table-bordered border-secondary table-striped table-hover caption-top">
+                            <caption class="text-white text-center">Discografía de Queen</caption>
+                            <thead class="table-warning">
+                                <tr>
+                                    <th class="text-center">Año</th>
+                                    <th class="text-center">Datos del album</th>
+                                    <th class="text-center">Carátula</th>
+                                    <th class="text-center">Lista de canciones</th>
+                                    <th class="text-center">Reproducir</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="text-center align-middle">1973</td>
+                                    <td class="align-middle ancho_col_datos">
+                                        <p class="text-center"><strong>Queen</strong></p>
+                                        <ul>
+                                            <li>Publicado: 13 julio</li>
+                                            <li>Sello: Parlophone</li>
+                                        </ul>
+                                    </td>
+                                    <td class="text-center align-middle">
+                                        <img src="img/discos/queen/queen.jpg" />
+                                    </td>
+                                    <td>
+                                        <ol>
+                                            <li>Keep Yourself Alive</li>
+                                            <li>Doing All Right</li>
+                                            <li>Great King Rat</li>
+                                            <li>My Fairy King</li>
+                                            <li>Liar</li>
+                                            <li>The Night Comes Down</li>
+                                            <li>Modern Times Rock & Roll</li>
+                                            <li>Son and Daughter</li>
+                                            <li>Jesus</li>
+                                            <li>Seven Seas of Rhye (Instrumental)</li>
+                                        </ol>
+                                    </td>
+                                    <td class="text-center align-middle">
+                                        <audio controls>
+                                            <source src="audio/queen/queen.mp3" type="audio/mp3">
+                                            Tu navegador no soporta el elemento audio.
+                                        </audio>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center align-middle" rowspan="2">1974</td>
+                                    <td class="align-middle ancho-col-datos">
+                                        <p class="text-center"><strong>Queen II</strong></p>
+                                        <ul>
+                                            <li>Publicado: 8 marzo</li>
+                                            <li>Sello: Parlophone</li>
+                                        </ul>
+                                    </td>
+                                    <td class="text-center align-middle">
+                                        <img src="img/discos/queen/queen2.jpg" />
+                                    </td>
+                                    <td>
+                                        <ol>
+                                            <li>Procession</li>
+                                            <li>Father to Son</li>
+                                            <li>White Queen (As It Began)</li>
+                                            <li>Some Day One Day</li>
+                                            <li>The Loser in the End</li>
+                                            <li>Ogre Battle</li>
+                                            <li>The Fairy Feller's Master-Stroke</li>
+                                            <li>Nevermore</li>
+                                            <li>The March of the Black Queen</li>
+                                            <li>Funny How Love Is</li>
+                                            <li>Seven Seas of Rhye</li>
+                                        </ol>
+                                    </td>
+                                    <td class="text-center align-middle">
+                                        <audio controls>
+                                            <source src="audio/queen/queen2.mp3" type="audio/mp3">
+                                            Tu navegador no soporta el elemento audio.
+                                        </audio>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="align-middle ancho-col-datos">
+                                        <p class="text-center"><strong>Sheer Heart Attack</strong></p>
+                                        <ul>
+                                            <li>Publicado: 8 noviembre</li>
+                                            <li>Sello: Parlophone</li>
+                                        </ul>
+                                    </td>
+                                    <td class="text-center align-middle">
+                                        <img src="img/discos/queen/sheerheartattack.jpg" />
+                                    </td>
+                                    <td>
+                                        <ol>
+                                            <li>Brighton Rock</li>
+                                            <li>Killer Queen</li>
+                                            <li>Tenement Funster</li>
+                                            <li>Flick of the Wrist</li>
+                                            <li>Lily of the Valley</li>
+                                            <li>Now I'm Here</li>
+                                            <li>In the Lap of the Gods</li>
+                                            <li>Stone Cold Crazy</li>
+                                            <li>Dear Friends</li>
+                                            <li>Misfire</li>
+                                            <li>Bring Back that Leroy Brown</li>
+                                            <li>She Makes Me</li>
+                                            <li>In the Lap of the Gods... Revisited</li>
+                                        </ol>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center align-middle">1975</td>
+                                    <td class="align-middle ancho_col_datos">
+                                        <p class="text-center"><strong>A Night at the Opera</strong></p>
+                                        <ul>
+                                            <li>Publicado: 21 noviembre</li>
+                                            <li>Sello: Parlophone</li>
+                                        </ul>
+                                    </td>
+                                    <td class="text-center align-middle">
+                                        <img src="img/discos/queen/anightattheopera.jpg" />
+                                    </td>
+                                    <td>
+                                        <ol>
+                                            <li>Death On Two Legs (Dedicated To...)</li>
+                                            <li>Lazing On A Sunday Afternoon</li>
+                                            <li>I'm In Love With My Car</li>
+                                            <li>You're My Best Friend</li>
+                                            <li>'39</li>
+                                            <li>Sweet Lady</li>
+                                            <li>Seaside Rendezvous</li>
+                                            <li>The Prophet's Song</li>
+                                            <li>Love of My Life</li>
+                                            <li>Good Company</li>
+                                            <li>Bohemian Rhapsody</li>
+                                            <li>God Save The Queen</li>
+                                        </ol>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- Discografía de U2 -->
+                <div class="tab-pane fade" id="nav-u2" role="tabpanel" aria-labelledby="nav-u2-tab" tabindex="0">
+                    <div class="flex-fill border border-1 border-white p-3 bg-warning bg-opacity-25 table-responsive" style="height: 600px; overflow: auto">
+                        <table class="table table-light table-bordered border-secondary table-striped table-hover caption-top">
+                            <caption class="text-white text-center">Discografía de U2</caption>
+                            <thead class="table-warning">
+                                <tr>
+                                    <th class="text-center">Año</th>
+                                    <th class="text-center">Datos del album</th>
+                                    <th class="text-center">Carátula</th>
+                                    <th class="text-center">Lista de canciones</th>
+                                    <th class="text-center">Reproducir</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="text-center align-middle">1980</td>
+                                    <td class="align-middle ancho_col_datos">
+                                        <p class="text-center"><strong>Boy</strong></p>
+                                        <ul>
+                                            <li>Publicado: 20 octubre</li>
+                                            <li>Sello: Island Records</li>
+                                            <li>Formato: LP, casete</li>
+                                        </ul>
+                                    </td>
+                                    <td class="text-center align-middle">
+                                        <img src="img/discos/u2/boy.jpg" />
+                                    </td>
+                                    <td>
+                                        <ol>
+                                            <li>I Will Follow</li>
+                                            <li>Twilight</li>
+                                            <li>An Cat Dubh</li>
+                                            <li>Into the Heart</li>
+                                            <li>Out of Control</li>
+                                            <li>Stories for Boys</li>
+                                            <li>The Ocean</li>
+                                            <li>A Day Without Me</li>
+                                            <li>Another Time, Another Place</li>
+                                            <li>The Electric Co.</li>
+                                            <li>Shadows and Tall Trees</li>
+                                            <li>Fire (instrumental)</li>
+                                        </ol>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center align-middle">1981</td>
+                                    <td class="align-middle ancho_col_datos">
+                                        <p class="text-center"><strong>October</strong></p>
+                                        <ul>
+                                            <li>Publicado: 12 octubre</li>
+                                            <li>Sello: Island Records</li>
+                                            <li>Formato: LP, casete</li>
+                                        </ul>
+                                    </td>
+                                    <td class="text-center align-middle">
+                                        <img src="img/discos/u2/october.jpg" />
+                                    </td>
+                                    <td>
+                                        <ol>
+                                            <li>Gloria</li>
+                                            <li>I Fall Down</li>
+                                            <li>I Threw a Brick Through a Window</li>
+                                            <li>Rejoice</li>
+                                            <li>Fire</li>
+                                            <li>Tomorrow</li>
+                                            <li>October</li>
+                                            <li>With a Shout</li>
+                                            <li>Stranger in a Strange Land</li>
+                                            <li>Scarlet</li>
+                                            <li>Is That All?</li>
+                                        </ol>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center align-middle">1983</td>
+                                    <td class="align-middle ancho_col_datos">
+                                        <p class="text-center"><strong>War</strong></p>
+                                        <ul>
+                                            <li>Publicado: 28 febrero</li>
+                                            <li>Sello: Island Records</li>
+                                            <li>Formato: LP, casete</li>
+                                        </ul>
+                                    </td>
+                                    <td class="text-center align-middle">
+                                        <img src="img/discos/u2/war.jpg" />
+                                    </td>
+                                    <td>
+                                        <ol>
+                                            <li>Sunday Bloody Sunday</li>
+                                            <li>Seconds</li>
+                                            <li>New Year's Day</li>
+                                            <li>Like a Song...</li>
+                                            <li>Drowning Man</li>
+                                            <li>The Refugee</li>
+                                            <li>Two Hearts Beat as One</li>
+                                            <li>Red Light</li>
+                                            <li>Surrender</li>
+                                            <li>40</li>
+                                        </ol>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center align-middle">1984</td>
+                                    <td class="align-middle ancho_col_datos">
+                                        <p class="text-center"><strong>The Unforgettable Fire</strong></p>
+                                        <ul>
+                                            <li>Publicado: 1 octubre</li>
+                                            <li>Sello: Island Records</li>
+                                            <li>Formato: LP, casete, 8-track, CD</li>
+                                        </ul>
+                                    </td>
+                                    <td class="text-center align-middle">
+                                        <img src="img/discos/u2/theunforgettablefire.jpg" />
+                                    </td>
+                                    <td>
+                                        <ol>
+                                            <li>A Sort of Homecoming</li>
+                                            <li>Pride (In the Name of Love)</li>
+                                            <li>Wire</li>
+                                            <li>The Unforgettable Fire</li>
+                                            <li>Promenade</li>
+                                            <li>4th of July</li>
+                                            <li>Bad</li>
+                                            <li>Indian Summer Sky</li>
+                                            <li>Elvis Presley and America</li>
+                                            <li>MLK</li>
+                                        </ol>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <!-- Discografía de Oasis -->
+                <div class="tab-pane fade" id="nav-oasis" role="tabpanel" aria-labelledby="nav-oasis-tab" tabindex="0">
+                    <div class="flex-fill border border-1 border-white p-3 bg-warning bg-opacity-25 table-responsive" style="height: 600px; overflow: auto">
+                        <table class="table table-light table-bordered border-secondary table-striped table-hover caption-top">
+                            <caption class="text-white text-center">Discografía de Oasis</caption>
+                            <thead class="table-warning">
+                                <tr>
+                                    <th class="text-center">Año</th>
+                                    <th class="text-center">Datos del album</th>
+                                    <th class="text-center">Carátula</th>
+                                    <th class="text-center">Lista de canciones</th>
+                                    <th class="text-center">Reproducir</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="text-center align-middle"></td>
+                                    <td class="align-middle ancho_col_datos">
+                                        <p class="text-center"><strong></strong></p>
+                                        <ul>
+                                            <li>Publicado: </li>
+                                            <li>Sello: </li>
+                                        </ul>
+                                    </td>
+                                    <td class="text-center align-middle">
+                                        <img src="" />
+                                    </td>
+                                    <td>
+                                        <ol>
+                                            <li></li>
+                                        </ol>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <!-- Discografía de Nirvana -->
+                <div class="tab-pane fade" id="nav-nirvana" role="tabpanel" aria-labelledby="nav-nirvana-tab" tabindex="0">
+                    <div class="flex-fill border border-1 border-white p-3 bg-warning bg-opacity-25 table-responsive" style="height: 600px; overflow: auto">
+                        <table class="table table-light table-bordered border-secondary table-striped table-hover caption-top">
+                            <caption class="text-white text-center">Discografía de Nirvana</caption>
+                            <thead class="table-warning">
+                                <tr>
+                                    <th class="text-center">Año</th>
+                                    <th class="text-center">Datos del album</th>
+                                    <th class="text-center">Carátula</th>
+                                    <th class="text-center">Lista de canciones</th>
+                                    <th class="text-center">Reproducir</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="text-center align-middle"></td>
+                                    <td class="align-middle ancho_col_datos">
+                                        <p class="text-center"><strong></strong></p>
+                                        <ul>
+                                            <li>Publicado: </li>
+                                            <li>Sello: </li>
+                                        </ul>
+                                    </td>
+                                    <td class="text-center align-middle">
+                                        <img src="" />
+                                    </td>
+                                    <td>
+                                        <ol>
+                                            <li></li>
+                                        </ol>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Ventana modal de registro -->
+    <div id="ventanaRegistro" class="modal">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content bg-light rounded-3">
+                <div class="modal-header rounded-3">
+                    <h4 class="mb-0">Regístrate en nuestra web  <i class="icon-note"></i></h4>
+                    <button type="button" class="btn-close ms-5 bg-white rounded-circle" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center px-lg-5 px-md-2 px-sm-0">
+                    <p>Introduce los siguientes datos:</p>
+                    <form name="formRegistro">
+                        <div class="input-group mb-3">
+                            <span class="input-group-text">Nombre y Apellidos</span>
+                            <input type="text" class="form-control" id="inputNombre" name="nombre" required>
+                        </div>
+                        <div class="input-group col-6 mb-3">
+                            <span class="input-group-text">Fecha de nacimiento</span>
+                            <input type="date" class="form-control" id="inputFechaNacimiento" name="fechaNacimiento" required>
+                        </div>
+                        <div class="input-group mb-3">
+                            <label class="input-group-text" for="inputSexo">Sexo</label>
+                            <select class="form-select" id="inputSexo" name="sexo">
+                                <option selected>Elige una opción...</option>
+                                <option value="Hombre">Hombre</option>
+                                <option value="Mujer">Mujer</option>
+                                <option value="No contesta">Prefiero no contestar</option>
+                            </select>
+                        </div>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text">Dirección  <i class="icon-location-pin"></i></span>
+                            <input type="text" class="form-control" id="inputDireccion" name="direccion" required>
+                        </div>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text">e-mail  @</span>
+                            <input type="email" class="form-control" id="inputEmail" name="email" autocomplete="on" required>
+                        </div>
+                        <button type="button" class="btn btn-outline-success me-5" id="btnValidarDatos">Validar datos</button>
+                        <input type="reset" class="btn btn-outline-dark" id="btnLimpiarDatos" value="Limpiar datos" />
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer text-center bg-dark bg-opacity-75">
+        <div class="container-fluid px-4 px-lg-5">
+            <div class="row justify-content-lg-between">
+                <div class="col-lg-3 col-md-3 col-sm-12">
+                    <ul class="list-inline mb-1">
+                        <li class="list-inline-item">
+                            <a class="social-link rounded-circle text-white me-3" href="#!"><i class="icon-social-facebook"></i></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a class="social-link rounded-circle text-white me-3" href="#!"><i class="icon-social-twitter"></i></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a class="social-link rounded-circle text-white" href="#!"><i class="icon-social-github"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-7 col-md-7 col-sm-12 pt-4">
+                    <p class="text-white small">Copyright &copy; Your Website 2024</p>
+                </div>
+                <div class="col-lg-1 col-md-1 col-sm-12">
+                    <ul class="list-inline mb-1">
+                        <li class="list-inline-item">
+                            <a class="social-link rounded-circle text-white" href="https://maps.app.goo.gl/vWn5rYSmBU22NvtG8" target="_blank"><i class="icon-location-pin"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <!--<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="js/site.js"></script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+﻿body
+{
+    background-image: url("../img/Fondo.gif")
+}
+#cuadrado {
+    position: absolute;
+    width: 100px;
+    height: 50px;
+    background-color: transparent;
+    left: 10px;
+    top: 10px;
+}
+#disparo {
+    position: absolute;
+    width: 30px;
+    height: 100px;
+    left: -20px;
+    top: -10px;
+}

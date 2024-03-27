@@ -1,0 +1,24 @@
+﻿body {
+    background-color: cornflowerblue;
+    margin: 10px;
+}
+
+/*div {
+    outline-color: black;
+    outline-width: 1px;
+    outline-style: solid;
+}
+*/
+#idSalida {
+    width: 100%;
+    height: 200px;
+    background-color: white;
+}
+
+.verde {
+    background-color: green;
+}
+
+.rojo {
+    background-color: red;
+}

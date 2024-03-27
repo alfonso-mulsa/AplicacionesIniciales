@@ -1,0 +1,61 @@
+/**************** N A V B A R ****************/
+
+.navbar-estilo {
+    background-color: #8fc6fa;
+}
+.navlink-estilo {
+    color: blue;
+}
+.dropdownmenu-estilo {
+    background-color: #d7ecff;
+}
+
+/**************** CARDS ****************/
+
+.background {
+	background: #dedec8;
+	padding: 4em 0;
+}
+.team {
+	color: #5e5e55;
+	padding: 0 180px;
+}
+
+	.team .card-columns {
+		-webkit-column-count: 4;
+		-moz-column-count: 4;
+		column-count: 4;
+	}
+
+	.team .card {
+		background: none;
+		border: none;
+	}
+
+	.team .card-title {
+		font-size: 1.3rem;
+		margin-bottom: 0;
+		text-transform: uppercase;
+	}
+
+/**************** FORMULARIO ****************/
+
+.formulario-title {
+	color: #333;
+	font-size: 1.3rem;
+	font-weight: 700;
+	margin-bottom: 20px;
+	text-transform: uppercase;
+}
+
+/**************** F O O T E R ****************/
+.page-footer {
+    background-color: #222;
+    color: #ccc;
+    padding-top: 10px;
+}
+.footer-copyright {
+    color: #666;
+    padding-top: 0;
+    padding-bottom: 10px;
+}

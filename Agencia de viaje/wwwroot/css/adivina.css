@@ -1,0 +1,18 @@
+﻿body {
+    background-color: aqua;
+    margin: 10px;
+}
+
+div {
+    outline-color: black;
+    outline-width: 1px;
+    outline-style: solid;
+}
+
+.verde {
+    background-color: green;
+}
+
+.rojo {
+    background-color: red;
+}
