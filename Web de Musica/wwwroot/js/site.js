@@ -4,7 +4,8 @@ var numFondo = 1;
 setInterval(cambiarFondo, 5000);
 
 function cambiarFondo() {
-    document.body.style.backgroundImage = "url(" + imagenes[numFondo] + ")";
+    //document.body.style.backgroundImage = "url(" + imagenes[numFondo] + ")";
+    $("body").css("background-image", "url(" + imagenes[numFondo] + ")");
     numFondo += 1;
     //console.log(document.body.style.backgroundImage);
     //console.log(numFondo);
